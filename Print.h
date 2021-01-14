@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <sstream>
 
 namespace mdlacey {
     template<typename T>
@@ -27,5 +26,10 @@ namespace mdlacey {
     template<Printable T>
     void print(T printable) {
         std::cout << printable;
+    }
+    
+    template<WPrintable T>
+    void wprint(T printable) {
+        std::wcout << printable;
     }
 }
